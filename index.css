@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    background-color: darkblue;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.score-bdg {
+    background-color: black;
+    color: white;
+    padding: 6px 8px;
+    text-align: right;
+    width: 45px;
+    margin-top: -19px;
+    margin-left: 25px
+}
+
+.score {
+    color: red;
+    font-size: 39px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+
+h3 {
+    color: white;
+}
+
+.wrapper {
+    text-align: center
+}
+
+button {
+    background-color: darkblue;
+    color: wheat;
+    border-color: white;
+    
+}
