@@ -1,11 +1,13 @@
 body {
     margin: 0;
     background-color: darkblue;
+    width: 500px;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
+    width: 500px;
 }
 
 .score-bdg {
