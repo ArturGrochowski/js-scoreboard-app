@@ -51,7 +51,7 @@ let minutes = 0;
 let seconds = 0;
 
 function runClock() {
-    if(minutes<60){
+    if(seconds<60){
         seconds++;
     } else {
         seconds = 0;
