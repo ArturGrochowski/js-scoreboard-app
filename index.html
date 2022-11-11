@@ -1,5 +1,6 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
@@ -13,6 +14,15 @@
                 <button onclick="add1home()">+1</button>
                 <button onclick="add2home()">+2</button>
                 <button onclick="add3home()">+3</button>
+            </div>
+            <div class="wrapper">
+                <h3>TIME</h3>
+                <div class="time-bdg">
+                    <span id="clock-el" class="score">00:00</span>
+                </div>
+                <br>
+                <button onclick="startTimer()">START</button>
+                <button id="pause-btn" onclick="pauseOrResetTimmer()">PAUSE</button>
             </div>
             <div class="wrapper">
                 <h3>AWAY</h3>

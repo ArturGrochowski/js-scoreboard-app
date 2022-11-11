@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: darkblue;
+    background-color: black;
     width: 500px;
 }
 
@@ -20,6 +20,11 @@ body {
     margin-left: 25px
 }
 
+.time-bdg {
+    background-color: black;
+    padding:6px 8px;
+}
+
 .score {
     color: red;
     font-size: 39px;
@@ -36,8 +41,8 @@ h3 {
 }
 
 button {
-    background-color: darkblue;
-    color: wheat;
-    border-color: white;
+    background-color: black;
+    color: white;
+    border-color: darkgrey;
     
 }

@@ -1,5 +1,7 @@
 let homeScoreDisplay = document.getElementById("score-home");
 let awayScoreDisplay = document.getElementById("score-away");
+let pauseButton = document.getElementById("pause-btn");
+let clockIsRunning = false;
 
 let homeScoreResult = 0;
 let awayScoreResult = 0;
@@ -39,4 +41,60 @@ function newGame() {
     homeScoreDisplay.textContent = homeScoreResult;
     awayScoreResult = 0;
     awayScoreDisplay.textContent = awayScoreResult;
+    clockIsRunning = false;
+    clearInterval(clock)
+    resetTimer();
+}
+
+let clock;
+let minutes = 0;
+let seconds = 0;
+
+function runClock() {
+    if(minutes<60){
+        seconds++;
+    } else {
+        seconds = 0;
+        minutes++;
+    }
+    document.getElementById("clock-el").innerHTML = timeRender();
+}
+
+function startTimer() {
+    if(!clockIsRunning){
+    pauseButton.textContent = "PAUSE"
+    clockIsRunning = true;
+    clock = setInterval(runClock ,1000);
+    } else {
+        console.log("Can't u see the Timer is running already? Moron...")
+    }
+}
+
+function pauseOrResetTimmer() {
+    if(clockIsRunning){
+        pauseTimer()
+    } else {
+        resetTimer()
+    }
+}
+
+function pauseTimer() {
+    clearInterval(clock)
+    clockIsRunning = false;
+    pauseButton.textContent = "RESET"
+}
+
+function resetTimer() {
+    minutes = 0;
+    seconds = 0;
+    document.getElementById("clock-el").innerHTML = timeRender();
+}
+
+function timeRender() {
+    let minutesStr = "" + minutes;
+    let secondsStr = "" + seconds;
+    minutesStr = minutesStr.padStart(2, '0');
+    secondsStr = secondsStr.padStart(2, '0');
+
+    return minutesStr + ":" + secondsStr;
 }
