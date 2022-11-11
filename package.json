@@ -1,5 +1,5 @@
 {
-  "name": "project",
+  "name": "scoreboard",
   "dependencies": {},
   "devDependencies": {
     "vite": "latest"
@@ -8,7 +8,6 @@
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "homepage": "."
+    "preview": "vite preview"
   }
 }
