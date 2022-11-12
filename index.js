@@ -42,6 +42,7 @@ function newGame() {
     awayScoreResult = 0;
     awayScoreDisplay.textContent = awayScoreResult;
     clockIsRunning = false;
+    pauseButton.textContent = "PAUSE"
     clearInterval(clock)
     resetTimer();
 }
